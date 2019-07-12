@@ -133,7 +133,7 @@ print_result(mostFrequent)
 | eaton-boy-scouts_EN.txt      | 0.3182874681065777  |
 | schloemp-tolle-koffer_DE.txt | 0.31754458730817087 |
 
-> language with smallest total di􏰂fference is Spanish 
+> language with smallest total diff􏰂erence is Spanish 
 ### Case 2:
 ```python
 print_result(small_dicts)  
@@ -144,7 +144,7 @@ print_result(small_dicts)
 | eaton-boy-scouts_EN.txt      | 1.070270616943595   |
 | schloemp-tolle-koffer_DE.txt | 1.326611964526741   |
 
-> language with smallest total di􏰂fference is Spanish 
+> language with smallest total diff􏰂erence is Spanish 
 
 ### Case 3:
 ```python
@@ -156,7 +156,7 @@ print_result(dicts)
 | eaton-boy-scouts_EN.txt      | 1.0391277012936015  |
 | schloemp-tolle-koffer_DE.txt | 1.1855713272638     |
 
-> language with smallest total di􏰂fference is Spanish 
+> language with smallest total diff􏰂erence is Spanish 
 
 ## Findings
-All three cases preddicts the same language: Spanish.
+All three cases predicts the same language: Spanish.
