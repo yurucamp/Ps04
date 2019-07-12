@@ -18,9 +18,9 @@ These fi􏰃les are books, downloaded from **Project Gutenberg**.
 ###  We made 3 cases for the data set:
 * **Case 1**: only retain a small number of the most common words. (here, we limit  dict length into 10)
     ```python
-    -print(mostFrequent)  # the frequency table of the ten most common words
+    print(mostFrequent)  # the frequency table of the ten most common words
     ```
-   '''
+```
   {'schloemp-tolle-koffer_DE.txt': {'der': 0.05649108253836582,
   'und': 0.04545831605143094,
   'die': 0.03782662795520531,
@@ -61,7 +61,7 @@ These fi􏰃les are books, downloaded from **Project Gutenberg**.
   'no': 0.034060269627279934,
   'mi': 0.032355273592387,
   'me': 0.025812846946867564}}
-  ''' 
+``` 
 * Case 2: only short words (ie, words with no more than 4 letters.)
 * Case 3: original data with no limit on maximum word length and preserved dict length
 
