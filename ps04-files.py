@@ -12,7 +12,7 @@ print(d)
 ## use os.chdir() to change path
 f = os.listdir(".") # current folder
 print(f)
-files = os.listdir('data')
+files = os.listdir('../data')
 #file = list(files)
 print(files)
 
@@ -24,8 +24,9 @@ def freq_Table(words):
             if not word in word_frequency.keys():
                 word_frequency[word] = 0
             word_frequency[word]+=1
+    #print(word_frequency)
     total = sum(word_frequency.values())
-    freq_table = {k:v/total for k, v in word_frequency.items()}        
+    freq_table = {k:(v/total) for k, v in word_frequency.items()}        
     return freq_table
 
 def most_freq(d, length):
@@ -37,7 +38,7 @@ dicts = dict()
 small_dicts = dict()
 mostFrequent = dict()
 for fname in files:
-    with open('data/'+fname) as f:   
+    with open('../data/'+fname) as f:   
         content = f.read()
         # print(content)
     words = [ word.strip('􏰇|©􏰆􏰄􏰅!@#$%^&*()-_=+,.;:?/<>\'\`􏰀􏰁[]') for word in content.split()]
@@ -47,8 +48,8 @@ for fname in files:
     dicts[fname] = freq_Table(words)
     small_dicts[fname] = freq_Table(short_words)
     mostFrequent[fname] = most_freq(small_dicts[fname], 10)
-
-#print(mostFrequent)
+    
+print(dicts['cherbonnel-mi-tio_SP.txt'])
 
 def print_result(dicts):
     unknown = dicts.pop('unknown-lang.txt')
@@ -65,7 +66,7 @@ def print_result(dicts):
         if min_difference > total_difference[f]:
             min_difference = total_difference[f]
             answer = f
-    
+    print("total_difference", total_difference)
     print("language with smallest total di􏰂fference is", answer)
 
 print_result(dicts)
