@@ -17,9 +17,9 @@ These fi􏰃les are books, downloaded from **Project Gutenberg**.
  
 ###  We made 3 cases for the data set:
 * **Case 1**: only retain a small number of the most common words. (here, we limit  dict length into 10)
-    '''python
+    ```python
     -print(mostFrequent)  # the frequency table of the ten most common words
-    '''
+    ```
    '''
   {'schloemp-tolle-koffer_DE.txt': {'der': 0.05649108253836582,
   'und': 0.04545831605143094,
